@@ -23,22 +23,23 @@
     Coingecko Api (cotações de criptomoedas): https://www.coingecko.com/en/api
     API Futebol: https://www.api-futebol.com.br/
 
-### Api e Database escolhidos:
-Banco de dados Mongo
-APi(https://pokeapi.co/api/v2/pokemon?limit=151)
-Objetivo é puxar da api pokeapi.co/api todos os 151 pokemons da regição de Kanto e inserir no banco de dados mongo.
-Collection: pokedex
-Funcionamento:
-Apagar collection pokedex
-Capturar com a api os dados dos pokemons
-Inserir na collection pokedex
-Mostrar os pokemons pela collection
+## Api e Database escolhidos:
+    Banco de dados MongoDB
+    APi(https://pokeapi.co/api/v2/pokemon?limit=151)
+## Objetivo 
+    é puxar da api pokeapi.co/api todos os 151 pokemons da regição de Kanto e inserir no banco de dados mongo.
+    Collection: pokedex
+    Funcionamento:
+    Apagar collection pokedex
+    Capturar com a api os dados dos pokemons
+    Inserir na collection pokedex
+    Mostrar os pokemons pela collection
 
 #### Comandos
-docker run pasta_projeto - Executando o containe
-docker-compose up -d - Subindo os containers do docker-compose
-docker exec -it mongodb bash - acessar o terminal do banco de dados mongodb
-mongosh -u admin -p admin - acessando o banco de dados mongodb com o usuario admin
-use mydb - criando um banco de dados(pokemon_db)
-db.createCollection('pokedex'); - criando uma collection
-Interface para o mongodb(mongo-express) - http://localhost:8081/
+    docker run pasta_projeto - Executando o containe
+    docker-compose up -d - Subindo os containers do docker-compose
+    docker exec -it mongodb bash - acessar o terminal do banco de dados mongodb
+    mongosh -u admin -p admin - acessando o banco de dados mongodb com o usuario admin
+    use mydb - criando um banco de dados(pokemon_db)
+    db.createCollection('pokedex'); - criando uma collection
+    Interface para o mongodb(mongo-express) - http://localhost:8081/
