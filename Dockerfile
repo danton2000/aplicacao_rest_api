@@ -5,7 +5,11 @@ FROM python:3.8-slim
 WORKDIR /app
 
 # Copiando o arquivo de script para o container
-COPY script.py /app
+COPY main.py /app
+
+# Instalando dependências (se houver)
+RUN pip install --no-cache-dir requests
+RUN pip  install --no-cache-dir pymongo
 
 # Definindo o comando que será executado ao rodar o container
-CMD ["python", "script.py"]
+CMD ["python", "main.py"]

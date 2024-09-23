@@ -36,6 +36,7 @@
     Mostrar os pokemons pela collection
 
 #### Comandos
+    docker build -t meu_python_app . - Construindo/atualizando o container
     docker run pasta_projeto - Executando o containe
     docker-compose up -d - Subindo os containers do docker-compose
     docker exec -it mongodb bash - acessar o terminal do banco de dados mongodb
