@@ -33,7 +33,7 @@
     Apagar collection pokedex
     Capturar com a api os dados dos pokemons
     Inserir na collection pokedex
-    Mostrar os pokemons pela collection
+    Mostrar os pokemons pela collection do mongodb
 
 #### Comandos
     docker build -t meu_python_app . - Construindo/atualizando o container
@@ -41,6 +41,6 @@
     docker-compose up -d - Subindo os containers do docker-compose
     docker exec -it mongodb bash - acessar o terminal do banco de dados mongodb
     mongosh -u admin -p admin - acessando o banco de dados mongodb com o usuario admin
-    use mydb - criando um banco de dados(pokemon_db)
+    use pokemon_db - criando um banco de dados(pokemon_db)
     db.createCollection('pokedex'); - criando uma collection
     Interface para o mongodb(mongo-express) - http://localhost:8081/
